@@ -18,9 +18,8 @@ public class Carte implements ICarte{
 		return true;
 	}
 	
-	public boolean defausse() 
-	{
+	public boolean defausse() {
+		// TODO Auto-generated method stub
 		return false;
 	}
-
 }
