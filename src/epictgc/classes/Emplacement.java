@@ -1,6 +1,8 @@
-package epictgc;
+package epictgc.classes;
 
-public class Emplacement {
+import epictgc.interfaces.IEmplacement;
+
+public class Emplacement implements IEmplacement{
 	boolean estVide;
 	public Emplacement() 
 	{

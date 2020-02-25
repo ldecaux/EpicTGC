@@ -1,4 +1,4 @@
-package epictgc;
+package epictgc.classes;
 
 public class Main {
 

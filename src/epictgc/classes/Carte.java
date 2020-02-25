@@ -1,6 +1,8 @@
-package epictgc;
+package epictgc.classes;
 
-public class Carte {
+import epictgc.interfaces.ICarte;
+
+public class Carte implements ICarte{
 	
 	public Carte() {
 		
