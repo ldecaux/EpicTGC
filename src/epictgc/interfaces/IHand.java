@@ -1,6 +1,5 @@
 package epictgc.interfaces;
 
-public interface ITour {
+public interface IHand {
 
-	
 }
