@@ -1,5 +1,9 @@
 package epictgc.interfaces;
 
-public interface IEmplacement {
+import epictgc.classes.Carte;
 
+public interface IEmplacement {
+	public boolean poser(Carte carte, boolean visible);
+	public boolean retourner();
+	
 }

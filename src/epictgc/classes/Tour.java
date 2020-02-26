@@ -12,6 +12,12 @@ public class Tour implements ITour{
 	public Tour(int power) {
 		this.power = power;
 	}
+	public boolean poser(Emplacement emplacement, Carte carte, boolean visible) {
+		if(carte.getCost() <= power) {
+			return carte.poser(emplacement, visible);
+		}
+		return false;
+	}
 	
 	public int getPower() {
 		return this.power;

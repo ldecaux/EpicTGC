@@ -4,7 +4,6 @@ import epictgc.classes.Emplacement;
 import epictgc.classes.Tour;
 
 public interface ICarte {
-	public boolean poser(Emplacement emplacement , Tour tour);
-	public boolean defausse();
-	public boolean retourner();
+	public boolean poser(Emplacement emplacement, boolean visible);
+
 }

@@ -4,26 +4,27 @@ import epictgc.interfaces.ICarte;
 
 public class Carte implements ICarte{
 	
+	int cost;
 	public Carte() {
-		
+		new Carte(1);
 	}
-	public boolean poser(Emplacement emplacement , Tour tour)
+	public Carte(int cost) {
+		this.cost = cost;
+	}
+	
+	public boolean poser(Emplacement emplacement, boolean visible)
 	{
 		if (emplacement.estVide) 
 		{
-			// on pose la carte
-			//TODO terrain
+			return emplacement.poser(this, visible);
 		}
-		
-		return true;
-	}
-
-	public boolean defausse() {
-		// TODO Auto-generated method stub
 		return false;
 	}
-	public boolean retourner() {
-		// TODO Auto-generated method stub
-		return false;
+	
+	public int getCost() {
+		return cost;
+	}
+	public void setCost(int cost) {
+		this.cost = cost;
 	}
 }

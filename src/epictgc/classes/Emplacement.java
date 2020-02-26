@@ -6,57 +6,42 @@ public class Emplacement implements IEmplacement{
 	boolean estVide;
 	boolean visible;
 	Carte carte;
-	public Emplacement() 
-	{
+	public Emplacement() {
 		estVide = true;	
 	}
 
-	public boolean poser(Carte carte, boolean visible) 
-	{
+	public boolean poser(Carte carte, boolean visible) {
 		this.carte = carte;
 		this.visible = visible;
 		this.estVide = false;
 		return true;
-	
 	}
 	
 	public boolean retourner() {
 		visible = !visible;
-		
 		return true;
 	}
 	
-	public boolean getEstVide()
-	{
+	public boolean getEstVide(){
 		return estVide;
 	}
-	public void setEstVide(boolean b)
-	{
+	public void setEstVide(boolean b){
 		estVide = b;
 	}
 	
-	public boolean getVisible()
-	
-	{
+	public boolean getVisible(){
 		return this.visible;
 	}
-	public void setVisible(boolean visible)
-	
-	{
+	public void setVisible(boolean visible){
 		this.visible = visible;
 	}
 	
-	public Carte getCarte()
-	
-	{
+	public Carte getCarte(){
 		return this.carte;
 	}
 	
-	public void setCarte(Carte carte)
-	
-	{
+	public void setCarte(Carte carte){
 		this.carte = carte;
 	}
-	
 }
  
