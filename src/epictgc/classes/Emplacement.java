@@ -10,15 +10,17 @@ public class Emplacement implements IEmplacement{
 	{
 		estVide = true;	
 	}
+
 	public boolean poser(Carte carte, boolean visible) 
 	{
 		this.carte = carte;
 		this.visible = visible;
 		this.estVide = false;
 		return true;
+	
 	}
 	
-	public boolean Retourner() {
+	public boolean retourner() {
 		visible = !visible;
 		
 		return true;
@@ -34,21 +36,27 @@ public class Emplacement implements IEmplacement{
 	}
 	
 	public boolean getVisible()
+	
 	{
 		return this.visible;
 	}
 	public void setVisible(boolean visible)
+	
 	{
 		this.visible = visible;
 	}
 	
 	public Carte getCarte()
+	
 	{
 		return this.carte;
 	}
+	
 	public void setCarte(Carte carte)
+	
 	{
 		this.carte = carte;
 	}
+	
 }
  
