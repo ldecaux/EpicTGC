@@ -1,5 +1,7 @@
 package epictgc.interfaces;
 
-public interface IDeck {
+import epictgc.classes.Carte;
 
+public interface IDeck {
+	public Carte draw();
 }
