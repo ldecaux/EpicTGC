@@ -1,6 +1,8 @@
 package epictgc.interfaces;
 
+import epictgc.classes.Carte;
+
 public interface ICimetiere {
-	public int nbCarte;
-	
+	public boolean ajouter(Carte carte);
+	public Carte recuperer(Carte carte);
 }
